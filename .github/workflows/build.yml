@@ -19,6 +19,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Maven
+      working-directory: ./corebundle
       run: mvn clean package
 
     - name: Upload Artifact
